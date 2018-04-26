@@ -12,8 +12,16 @@
     <script type="text/babel">
 
     class Hello extends React.Component {
+    
+    constructor() {
+        super();
+            this.state= {
+                message: "My Dude (from state)"
+            };
+        
+    }
     render() {
-        return <h1>Hello {this.props.message}!</h1>;
+        return <h1>Hello {this.state.message}!</h1>;
     }
 }
 
